@@ -12,10 +12,10 @@ end
 
 
 describe Counter do
-  let(:array) {['a', 'b', 'a', 'c', 'c', 'a']}
+  let(:array) {['/help_page/1 126.318.035.038', '/contact 184.123.665.067', '/contact 184.123.665.060', '/about/2 444.701.448.104']}
   let(:file) {LogFile.new(array)}
 
-  it 'returns the elements sorted according to frequency in descending order' do
-    expect(file.frequency(array)).to eq([['a', 3], ['c', 2], ['b', 1]])
+  it 'returns the urls sorted according to frequency in descending order' do
+    expect(file.frequency(array)).to eq([['/contact', 2], ['/about/2', 1], ['/help_page/1', 1]])
   end
 end
