@@ -1,4 +1,4 @@
-require 'counter.rb'
+require_relative './counter.rb'
 
 class LogFile
   include Counter
