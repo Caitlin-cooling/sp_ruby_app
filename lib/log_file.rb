@@ -9,7 +9,7 @@ class LogFile
 
   def read
     file = File.open(@file, "r")
-    return file.readlines
+    return frequency(file.readlines)
     file.close
   end
 end
