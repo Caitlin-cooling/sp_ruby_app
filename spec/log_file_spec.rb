@@ -9,3 +9,12 @@ describe LogFile do
     expect(file.read).to include "/about/2 444.701.448.104\n"
   end
 end
+
+
+describe Counter do
+  it 'returns the frequency that an element occurs in an array' do
+    array = ['a', 'b', 'a', 'c', 'c', 'a']
+    file = LogFile.new(array)
+    expect(file.frequency(array)).to eq({'a' => 3, 'b' => 1, 'c' => 2})
+  end
+end

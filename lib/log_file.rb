@@ -1,4 +1,8 @@
+require 'counter.rb'
+
 class LogFile
+  include Counter
+
   def initialize(file)
     @file = file
   end
