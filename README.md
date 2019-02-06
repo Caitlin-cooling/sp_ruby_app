@@ -22,6 +22,6 @@ Tests are written using RSpec, please run them using the command `rspec` when in
 ![alt text](images/tests_and_coverage.png)
 
 ## Dependancies
-* Ruby version 2.6 was used as it is an up to date stable version.
+* Ruby version 2.5.1 was used as it is an up to date stable version.
 * Simplecov has been used with RSpec to calculate test coverage.
 * RuboCop has been used to lint the code, ensuring a high quality.
