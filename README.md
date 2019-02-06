@@ -9,7 +9,7 @@ This is a command line app that gives the user a list of webpages and the corres
 5. Create a new log file. For example `file = LogFile.new('webserver.log')`
 6. Call the read method on your new object `file.read`
 
-![alt text](app.png)
+![alt text](images/app.png)
 
 ## My Approach to this Problem
 I took an OOP approach to this problem, having a LogFile class and a Counter module to separate concerns.
@@ -19,7 +19,7 @@ I decided to use TDD to ensure that my tests were meaningful, test coverage was 
 ## Testing
 Tests are written using RSpec, please run them using the command `rspec` when in the project directory. All tests are currently passing and coverage is 100%.
 
-![alt text](tests_and_coverage.png)
+![alt text](images/tests_and_coverage.png)
 
 ## Dependancies
 * Ruby version 2.6 was used as it is an up to date stable version.
