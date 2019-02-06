@@ -17,13 +17,11 @@ I took an OOP approach to this problem, having a LogFile class and a Counter mod
 I decided to use TDD to ensure that my tests were meaningful, test coverage was high and code was clean.
 
 ## Testing
-Tests are written using RSpec, please run them using the command `rspec` when in the project directory
+Tests are written using RSpec, please run them using the command `rspec` when in the project directory. All tests are currently passing and coverage is 100%.
 
-![alt text](testsAndConverage.png)
+![alt text](tests_and_coverage.png)
 
 ## Dependancies
 * Ruby version 2.6 was used as it is an up to date stable version.
 * Simplecov has been used with RSpec to calculate test coverage.
 * RuboCop has been used to lint the code, ensuring a high quality.
-
-## Without time restriction I would:
