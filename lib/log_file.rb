@@ -8,8 +8,8 @@ class LogFile
   end
 
   def read
-    file = File.open(@file, "r")
-    return frequency(file.readlines)
-    file.close
+    File.open(@file, "r") do |line|
+      frequency(line)
+    end
   end
 end
