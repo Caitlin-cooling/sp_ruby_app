@@ -6,7 +6,7 @@ module Counter
     url_array = get_url(array)
 
     url_array.each { |log| count[log] += 1 }
-    sorted(count)
+    format_string(sorted(count))
   end
 
   private
@@ -21,5 +21,13 @@ module Counter
       url_array << log.split(' ')[0]
     end
     url_array
+  end
+
+  def format_string(array)
+    strings = array.map do |item|
+      item[1] == 1 ? item << 'visit' : item << 'visits'
+      item.join(' ')
+    end
+    strings.join(', ')
   end
 end
