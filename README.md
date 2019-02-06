@@ -1,9 +1,9 @@
 # Smart Pension Ruby Developer Test
-This is a command line app that gives the user a list of webpages views, starting with the highest, and ending with the lowest, when given a log file.
+This is a command line app that gives the user a list of webpages and the corresponding views, starting with the highest, and ending with the lowest when given a log file.
 
 ## Using this app
-1. `git clone`
-2. `cd ruby_app`
+1. `git clone git@github.com:Caitlin-cooling/sp_ruby_app.git`
+2. `cd sp_ruby_app`
 3. `irb`
 4. `require './lib/log_file.rb'`
 5. Create a new log file. For example `file = LogFile.new('webserver.log')`
