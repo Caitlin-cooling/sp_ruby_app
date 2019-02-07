@@ -4,9 +4,7 @@ module Counter
   def frequency(array)
     count = Hash.new(0)
     url_array = get_url(array)
-
     url_array.each { |log| count[log] += 1 }
-    format_string(sorted(count))
   end
 
   private

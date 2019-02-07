@@ -20,6 +20,8 @@ describe Counter do
   let(:file) { LogFile.new(array) }
 
   it 'returns the urls sorted according to frequency in descending order' do
-    expect(file.frequency(array)).to eq"/contact 2 visits, /about/2 1 visit, /help_page/1 1 visit"
+    expect(file.frequency(array)).to eq({'/contact'=>2, '/about/2'=>1, '/help_page/1'=>1})
   end
+
+
 end
