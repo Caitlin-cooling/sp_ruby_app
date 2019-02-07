@@ -32,4 +32,10 @@ describe Counter do
     end
   end
 
+  describe 'get_url' do
+    it 'extracts a url from a log' do
+      expect(file.get_url('/contact 555.576.836.194')).to eq '/contact'
+    end
+  end
+
 end

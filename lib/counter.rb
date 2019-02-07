@@ -12,11 +12,7 @@ module Counter
   end
 
   def get_url(array)
-    url_array = []
-    array.each do |log|
-      url_array << log.split(' ')[0]
-    end
-    url_array
+    array.split(' ')[0]
   end
 
   def format_string(array)
