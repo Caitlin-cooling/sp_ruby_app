@@ -7,8 +7,6 @@ module Counter
     url_array.each { |log| count[log] += 1 }
   end
 
-  private
-
   def sorted(count)
     count.sort_by { |_page, visits| visits }.reverse
   end

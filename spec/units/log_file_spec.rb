@@ -19,9 +19,17 @@ describe Counter do
   end
   let(:file) { LogFile.new(array) }
 
-  it 'returns the urls sorted according to frequency in descending order' do
-    expect(file.frequency(array)).to eq({'/contact'=>2, '/about/2'=>1, '/help_page/1'=>1})
+  describe 'frequency' do
+    it 'returns the urls sorted according to frequency' do
+      expect(file.frequency(array)).to eq({'/contact'=>2, '/about/2'=>1, '/help_page/1'=>1})
+    end
   end
 
+  describe 'sorted' do
+    let(:hash) { { '/contact'=>1, '/about/2'=>6, '/help_page/1'=>3 } }
+    it 'sorts a hash by values in descending order' do
+      expect(file.sorted(hash)).to eq([["/about/2", 6], ["/help_page/1", 3], ["/contact", 1]])
+    end
+  end
 
 end
