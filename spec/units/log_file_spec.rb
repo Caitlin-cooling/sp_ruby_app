@@ -38,4 +38,11 @@ describe Counter do
     end
   end
 
+  describe 'format_string' do
+    let(:given_array) {[["/about/2", 6], ["/help_page/1", 1]]}
+    it 'formats a given array in to reabible logs' do
+      expect(file.format_string(given_array)).to eq '/about/2 6 visits, /help_page/1 1 visit'
+    end
+  end
+
 end
